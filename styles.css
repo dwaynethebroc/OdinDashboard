@@ -132,8 +132,33 @@ form {
     align-items: center;
 }
 
+p.username {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+p.usernameSmall {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p.title {
+    font-weight: bold;
+}
+
+.logos img {
+    height: 20px;
+}
+
+.logos {
+    display: flex;
+    margin-top: auto;
+    justify-content: end;
+    gap: 10px;
+}
 .buttons button{
-    height: 50px;
+    height: 45px;
+    width: 100px;
     border-radius: 30%;
     background-color: rgb(131, 131, 253);
 }
