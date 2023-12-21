@@ -3,6 +3,21 @@ html, body {
     margin: 0px;
 }
 
+input[type='text'] {
+    height: 30px;
+    width: 500px;
+}
+
+input[type='image']{
+    height: 30px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .container {
     display: grid;
 
@@ -36,7 +51,7 @@ html, body {
 }
 
 .projects {
-    background-color: rgb(255, 197, 52);
+    background-color: rgb(255, 255, 52);
 
     grid-row: 2 / 3;
     grid-column: 2 / 3;
@@ -47,6 +62,19 @@ html, body {
     grid-template-rows: 1fr 1fr;
 }
 
+.bell img {
+    height: 50px;
+    width: 50px;
+    
+}
+
+.profileGroup{
+    display: flex;
+    padding: 10px;
+
+    align-items: center;
+    justify-content: center;
+}
 .Links a {
     color: white;
     font-size: 20px;
@@ -67,11 +95,14 @@ html, body {
 .topRow {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    padding: 10px;
 }
 
 .bottomRow {
     display: flex;
     justify-content: space-around;
+    padding: 10px;
 }
 
 
@@ -109,8 +140,8 @@ html, body {
 
 .avatar {
     vertical-align: middle;
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
   }
 
@@ -126,11 +157,25 @@ html, body {
     border-radius: 50%;
   }
 
+  .topSearch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+.profileGroup {
+    padding: 10px;
+    gap: 10px;
+}
+
 
 .profilePicName {
     display: flex;
-    padding: 10px;
     gap: 10px;
+
+    align-items: center;
+    justify-content: center;
 }
 
 .projects {
@@ -140,6 +185,14 @@ html, body {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+/*
+.intro {
+    display: grid;
+
+    align-items: center;
+    justify-content: center;
+}
+*/
 .articleSection {
     display: grid;
 
@@ -147,6 +200,7 @@ html, body {
 
     grid-template-rows: 1fr 10fr;
     grid-template-columns: 1fr;
+    padding: 10px;
 }
 
 #articleHeadline div{
@@ -178,10 +232,13 @@ html, body {
     grid-area: 1 / 3 / 2 / 4;
 
     background-color: rgb(228, 6, 228);
+    padding: 10px;
 }
 
 .trending {
 
     grid-area: 2 / 3 / 3 / 4;
     background-color: rgb(255, 80, 80);
+    padding: 10px;
 }
+
