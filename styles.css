@@ -1,8 +1,6 @@
 html, body {
-    height: 100%;
-    width: 100%;
-
-    display: grid
+    display: grid;
+    margin: 0px;
 }
 
 .container {
@@ -38,7 +36,7 @@ html, body {
 }
 
 .projects {
-    background-color: yellow;
+    background-color: rgb(255, 197, 52);
 
     grid-row: 2 / 3;
     grid-column: 2 / 3;
@@ -146,21 +144,44 @@ html, body {
     display: grid;
 
     grid-area: 1 / 1 / 3 / 3;
+
+    grid-template-rows: 1fr 10fr;
+    grid-template-columns: 1fr;
 }
+
+#articleHeadline div{
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.articles {
+    display: grid;
+
+    grid-area: 2 / 1 / 3 / 3;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+
+    gap: 10px;
+}
+
 .card {
     padding: 15px;
     background-color: white;
     gap: 15px;
 }
 
+.headline{
+    font-size: 20px;
+    font-weight: 200;
+}
+
 .feed {
     grid-area: 1 / 3 / 2 / 4;
 
-    background-color: purple;
+    background-color: rgb(228, 6, 228);
 }
 
 .trending {
 
     grid-area: 2 / 3 / 3 / 4;
-    background-color: red;
+    background-color: rgb(255, 80, 80);
 }
