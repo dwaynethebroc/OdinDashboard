@@ -28,12 +28,24 @@ form {
 .sidebar {
     background-color: rgb(68, 68, 255);
 
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 10px;
 
     grid-row: 1 / 3;
     grid-column: 1 / 2;
 
     text-align: center;
+
+}
+
+.fill-white {
+    fill: white;
+}
+
+div.card {
+    border-bottom: 1px solid grey;
 }
 
 .header {
@@ -76,7 +88,6 @@ form {
     justify-content: center;
 }
 .Links a {
-    color: white;
     font-size: 20px;
     text-decoration: none;
 }
@@ -85,6 +96,11 @@ form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    color: white;
+}
+
+.logo {
+    display: flex;
 }
 
 .logoText {
@@ -115,6 +131,11 @@ form {
 
 }
 
+.logo {
+    flex-basis: 0 0 auto;
+    flex-grow: 0;
+}
+
 .feed {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -123,6 +144,18 @@ form {
 .trending {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+}
+
+.nav {
+    display: flex;
+    gap: 15px;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav img{
+    height: 50px;
+    width: 50px;
 }
 
 .buttons {
@@ -261,9 +294,36 @@ p.title {
 }
 
 .trending {
-
+    display: grid;
     grid-area: 2 / 3 / 3 / 4;
     background-color: rgb(255, 80, 80);
     padding: 10px;
 }
 
+.usersTrending {
+    display: flex;
+    padding: 15px;
+    background-color: white;
+    gap: 15px;
+
+    flex-grow: 1;
+}
+
+.usersTrending img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+p.userTitle {
+    font-size: 13px;
+    font-weight: 100;
+}
+
+img.nav {
+    height: 75px;
+}
+
+.white {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
