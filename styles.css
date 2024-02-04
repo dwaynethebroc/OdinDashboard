@@ -149,7 +149,8 @@ div.card {
 }
 
 .logo {
-    display: grid;
+    gap: 15px;
+    align-items: center;
 }
 
 
@@ -182,6 +183,9 @@ div.card {
     align-items: center;
 }
 
+p.name {
+    font-weight: 600;
+}
 p.username {
     font-size: 20px;
     font-weight: 600;
